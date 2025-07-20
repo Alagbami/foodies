@@ -15,7 +15,7 @@
     "@react-navigation/bottom-tabs": "^7.3.10",
     "@react-navigation/elements": "^2.3.8",
     "@react-navigation/native": "^7.1.6",
-    "@sentry/react-native": "^6.16.0",
+    "@sentry/react-native": "^6.17.0",
     "clsx": "^2.1.1",
     "expo": "53.0.19",
     "expo-blur": "~14.1.5",
@@ -51,8 +51,7 @@
     "eslint": "^9.25.0",
     "eslint-config-expo": "~9.2.0",
     "prettier-plugin-tailwindcss": "^0.5.14",
-    "tailwindcss": "^3.4.17",
-    "typescript": "~5.8.3"
+    "tailwindcss": "^3.4.17"
   },
   "private": true
 }

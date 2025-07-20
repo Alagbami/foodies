@@ -16,6 +16,12 @@ export interface Category extends Models.Document {
     description: string;
 }
 
+export interface CategoryOption {
+  $id: string;
+  name: string;
+}
+
+
 export interface User extends Models.Document {
     name: string;
     email: string;

@@ -11,6 +11,9 @@ import {MenuItem} from "@/type";
 
 import Filter from "@/components/Filter";
 import SearchBar from "@/components/SearchBar";
+import { Button } from 'react-native';
+
+import seed from "@/lib/seed"; // 👈 import your actual seed function
 
 const Search = () => {
     const { category, query } = useLocalSearchParams<{query: string; category: string}>()
@@ -24,6 +27,19 @@ const Search = () => {
 
     return (
         <SafeAreaView className="bg-white h-full">
+            <Button
+                title="Seed"
+                // onPress={async () => {
+                //     try {
+                //     await seed();
+                //     console.log("✅ Seed complete");
+                //     } catch (error) {
+                //     console.error("❌ Seeding failed", error);
+                //     }
+                // }}
+                onPress={() => seed().catch((error) => console.error("❌ Seeding failed", error))}
+                />
+
             <FlatList
                 data={data}
                 renderItem={({ item, index }) => {

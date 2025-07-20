@@ -6,12 +6,12 @@ export const appwriteConfig = {
     projectId: process.env.EXPO_PUBLIC_APPWRITE_PROJECT_ID!,
     platform: "com.lektech.foodordering",
     databaseId: '6877f4d2001ca99994c4',
-    bucketId: '68643e170015edaa95d7',
+    bucketId: '687af34500040ffe0c49',
     userCollectionId: '6877f51c00060ff8b9fe',
-    categoriesCollectionId: '68643a390017b239fa0f',
-    menuCollectionId: '68643ad80027ddb96920',
-    customizationsCollectionId: '68643c0300297e5abc95',
-    menuCustomizationsCollectionId: '68643cd8003580ecdd8f'
+    categoriesCollectionId: '687ae375003447337155',
+    menuCollectionId: '687ae871003cd42408d3',
+    customizationsCollectionId: '687aece300074a490152',
+    menuCustomizationsCollectionId: '687aefe40036b2e53a08'
 }
 
 export const client = new Client();
